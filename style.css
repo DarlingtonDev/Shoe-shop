@@ -1,0 +1,2186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.added-to-cart-succesfully{
+    position: fixed;
+    top: 40%;
+    left: 38%;
+    width: 25%;
+    height: 20vh;
+    background-color: #bbbbbb;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 8;
+    display: none;
+    transition-timing-function: ease-in;
+    transition-duration: .3s;
+}
+
+.added-to-cart-succesfully p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #070f15;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    margin-top: .5em;
+}
+
+.added-to-cart-succesfully button{
+    margin-top: 4em;
+    width: 8em;
+    height: 3em;
+    margin-left: 3em;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.added-to-cart-succesfully button:hover{
+    background-color: green;
+    color: #eceeee;
+}
+.our-brands, .best-offer-flex{
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE/Edge */
+}
+/* header beginning */
+
+.mobile-visible{
+    display: none;
+}
+
+.fa-bars-staggered{
+    display: none;
+}
+
+/* sub header begining */
+
+.subheader{
+    background-color: #eceeee;
+    min-height: 4vh;
+    width: 100%;
+    color: #070f15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1.8em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+
+.subheader select{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background-color: #eceeee;
+    border: 0px;
+    font-size: 12px;
+}
+
+.subheader-promo{
+    display: flex;
+    min-width: 30%;
+    justify-content: space-between;
+}
+
+.vertical-line{
+    width: 1.2px;
+    height: 2vh;
+    background-color: #070f15;
+}
+
+
+/* sub header ending */
+
+
+/* main header beginning */
+
+
+.mainheader{
+    display: flex;
+    min-height: 8vh;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: .5em;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.logoname{
+    margin-left: .2em;
+    line-height: 1.5em;
+}
+
+.logoname h2{
+    text-transform: capitalize;
+    color: #070f15;
+    font-family: 'Carter One', cursive;
+}
+
+
+.logoname p{
+    font-family: 'Carter One', cursive;
+}
+
+ ul{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #070f15;
+    font-size: 14px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.hover-categories{
+    margin-top: .5em;
+    opacity: 0;
+}
+.hover-categories ul{
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 0em;
+    height: 40%;
+    background-color: rgba(204, 206, 206, 0.9);
+    position: absolute;
+    z-index: 2;
+    margin-left: -1.3em;
+    animation: name .5s ease-in;
+    
+    
+}
+
+.category-link{
+    display: flex;
+    
+}
+
+.category-link i{
+    margin-top: .3em;
+    margin-left: .2em;
+}
+
+.search-input{
+    display: flex;
+    margin-top: 1em;
+}
+
+.line-search{
+    width: 14em;
+    height: 1.2px;
+    background-color: #cab9b8;
+    position: relative;
+    align-items: center;
+}
+
+.line-search small{
+    position: absolute;
+    z-index: 3;
+    top: -1em;
+    left: .2em;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+    color: #242624;
+    font-size: 13px;
+    
+}
+
+.line-search i{
+    position: absolute; 
+    top: -1.5em;
+    right: 0; 
+    background-color: #242624;
+    padding: .3em .4em;
+    color: #eceeee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.user-cart{
+    display: flex;
+ width: 9%;
+ justify-content: space-between;
+}
+
+
+.user-account{
+    display: flex;
+    align-items: center;
+}
+
+.user-account small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: .5em;
+    margin-left: .2em;
+    font-size: 12px;
+}
+
+.cart{
+    display: flex;
+}
+
+.cart small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: .4em;
+    margin-left: .2em;
+    font-size: 12px;
+}
+
+
+
+
+.cart-and-num{
+    position: relative;
+}
+
+.cart-and-num i{
+    color: #070f15;
+}
+
+.cart-and-num small{
+    position: absolute;
+    top: -1.5em;
+   right: -1em;
+    background-color:coral;
+   width: 1.3rem;
+   height: 1.3rem;
+    text-align: center;
+    padding-top: .3em;
+    border-radius: 50%;
+    color: #eceeee;
+}
+
+/* main header ending */
+
+
+/* header ending */
+
+
+
+/* main */
+
+
+main{
+    padding: 0em 6em;
+}
+
+
+/* hero section beginning */
+
+
+.hero-section{
+    max-width: 100%;
+    min-height: 20vh;
+    background-color: #eceeee;
+   margin-top: 1em;
+   background-blend-mode: multiply;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   z-index: 1;
+}
+
+
+
+.hero-section-text{
+    margin-left: 4em;
+    margin-top: 4em;
+}
+
+
+.hero-section-text button{
+    padding: .6em 1em;
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #242624;
+    color: #eceeee;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.hero-section-text h1{
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+}
+
+.hero-sec-image{
+    max-height: 50vh;
+    max-width: 50%;
+    
+}
+
+
+
+.hero-sec-image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    
+}
+
+
+
+
+
+/* brands */
+
+.brand-sec{
+margin-top: 2em;
+}
+
+.our-brands-head{
+    margin-bottom: .5em;
+}
+.our-brands-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+}
+
+.our-brands{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 1em;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 1em;
+    padding-bottom: 1em;
+
+}
+
+.brands{
+   height: 15vh;
+   flex: 1 0 14%;
+   scroll-snap-align: start;
+   border: 1px solid #cccccc;
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.brands img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* newarivals */
+
+.newarivals{
+    margin-top: 3em;
+    padding-bottom: 2em;
+}
+
+.arrivals-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    margin-bottom: 1em;
+}
+
+.arrivals-cards{
+ display: flex;
+ flex-wrap: wrap;
+ flex: 1 0 100%;
+ gap: 1.5em;
+
+ justify-content: space-between;
+}
+
+.card{
+    width: 23%;
+    height: 45vh;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
+
+.card a{
+    text-decoration: none;
+}
+
+.image-card-heart{
+    width: 100%;
+    height: 30vh; 
+    position: relative;
+}
+
+.image-card-heart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fa-heart{
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+.card-text{
+    line-height: 1.2em;
+    margin-top: .5em;
+}
+
+.cap-price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cap-price h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-text p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 12px;
+}
+
+.card-text i{
+    font-size: 13px;
+    color: #9e9e9e;
+}
+
+
+.card-icons small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624; 
+}
+
+
+.card button{
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-top: .5em;
+    border-radius: 25px;
+    box-shadow: none;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: #eceeee;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    color: #242624; 
+}
+
+.card button:hover{
+    background-color: #242624;
+    color: #eceeee;
+
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* popular category */
+
+.popular-categories{
+    padding-bottom: 1em;
+}
+
+.popular-category-head{
+    margin-bottom: 1.5em;
+}
+.popular-category-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+}
+
+
+.flex-category{
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.popular-category-card{
+    display: flex;
+    width: 49%;
+    height: 20vh;
+    gap: 1em;
+    background-color:#eceeee;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 5px;
+}
+
+.category-img{
+    width: 20%;
+    height: 17vh;
+}
+
+.category-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 0em;
+}
+
+.category-info{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-evenly;
+}
+.category-info h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+}
+
+
+.category-info p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+
+/* best offer */
+
+.best-offer{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+
+.best-offer-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    margin-bottom: 1em;
+}
+
+.best-offer-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  /*  overflow-y: hidden; */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: .5em;
+}
+
+.best-offer-card{
+    min-height: 40vh;
+    flex: 1 0 22.5%;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.percentage-off small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    border: 1px solid;
+    position: absolute;
+    right: .2em;
+    top: .5em;
+    background-color: coral;
+    color: #eceeee;
+    padding: .2em .5em;
+}
+
+
+.best-offer-image{
+    width: 100%;
+    height: 70%;
+}
+
+.best-offer-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+}
+
+
+.best-offer-product-name h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+.old-price{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
+.new-price{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+/* other info sec */
+
+.info-additional{
+    margin-top: 2em;
+    width: 100%;
+}
+.additional-info{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#eceeee;
+    background-color: #070f15;
+}
+
+.infos{
+
+}
+
+.infos .info-text h3{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+   
+    font-size: 18px;
+    color: #eceeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    min-height: 100%;
+    background-color: #242624;
+    padding: 1.5em 3.5em;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.footer-content h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #cccccc;
+}
+
+.footer-content ul li a{
+    color: #bbbbbb;
+}
+
+.logo-head-other-info{
+ max-width: 45%;
+}
+
+.logo-head-other-info h2{
+    color: #eceeee;
+}
+
+.logo-head-other-info p{
+    color: #eceeee;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: small;
+}
+
+
+.useful-links ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-around;
+    
+}
+
+.information-about-footer ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-around;
+}
+
+
+
+
+
+.help-center ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-around;
+}
+
+
+.copyright{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #9e9e9e;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* product page */
+
+.products-head-link{
+    margin-top: .5em;
+}
+
+.products-head-link p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+   
+}
+
+.product-page-product{
+    display: flex;
+}
+
+
+.product-page-product-image{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eceeee;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: .5em;
+}
+
+.product-page-product-info{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2em;
+}
+
+
+.large-image{
+width: 80%;
+height: 70%;
+margin-top: 1em;
+}
+
+.large-image img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+
+}
+
+
+
+
+.smaller-images{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2em;
+   
+}
+
+.small-image{
+    width: 22%;
+    height: 15vh;
+   
+}
+
+.small-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-page-info-head h2{
+text-transform: capitalize;
+font-family: 'Fira Sans', sans-serif;
+color: #242624;
+}
+
+.product-page-info-head p{
+    text-transform: capitalize;
+font-family: 'Fira Sans', sans-serif;
+color: #242624;
+font-size: 14px;
+}
+
+.product-page-product-info .card-icons i{
+    color: #9e9e9e;
+}
+
+
+.product-page-price h1{
+    text-transform: capitalize;
+font-family: 'Fira Sans', sans-serif;
+color: #242624;
+font-size: 24px;
+}
+
+
+.product-page-price p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 12px;
+}
+
+.color h3{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+    margin-bottom: .7em;
+}
+
+
+.increase-cart-product-page{
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+
+.increase-btn{
+background-color: #eceeee;
+width: 6em;
+height: 3.5vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 15px;
+}
+
+.increase-btn span{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 20px;
+}
+
+
+.increase-cart-product-page p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+.products-page-add-to-cart-btn button{
+    width: 12em;
+    height: 6vh;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #eceeee;
+    background-color:  #242624;
+    border-radius: 22px;
+    border: none;
+    margin-right: .5em;
+    cursor: pointer;
+}
+
+
+
+
+.color-variant{
+    display: flex;
+   column-gap: .8em;
+}
+
+
+
+.color-variant-1{
+    width: 5%;
+    height: 4.5vh;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+
+.color-variant-2{
+    width: 5%;
+    height: 4.5vh;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.color-variant-3{
+    width: 5%;
+    height: 4.5vh;
+    background-color: wheat;
+    border-radius: 50%;
+}
+
+
+.color-variant-4{
+    width: 5%;
+    height: 4.5vh;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+
+.color-variant-5{
+    width: 5%;
+    height: 4.5vh;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+
+.free-delivery{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.free-delivery-icon i{
+    color: #070f15;
+}
+
+.free-delivery-info h4, small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #070f15;
+}
+
+.free-delivery-info h4{
+    font-size: 14px;
+}
+
+.free-delivery-info small{
+    font-size: 12px;
+}
+
+.return-refund{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;  
+}
+
+.return-refund-icon i{
+    color: #070f15;
+}
+
+
+
+.return-refund-info h4, small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #070f15;
+}
+
+.return-refund-info h4{
+    font-size: 14px;
+}
+
+.return-refund-info small{
+    font-size: 12px;
+}
+
+
+
+/* cart page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .mobile-visible{
+        display: block;
+    }
+
+
+    main{
+        padding: 0em .5em;
+    } 
+    
+    .subheader{
+        display: none;
+    }
+
+
+.mobile-rejected-nav{
+    display: none;
+}
+
+.search-input{
+    display: none;
+}
+
+.user-account{
+    display: none;
+}
+
+.user-cart{
+    display: flex;
+    width: 7em;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* hero section */
+
+
+.hero-section{
+width: 100%;
+ min-height: 45vh;
+background-color: #eceeee;
+margin-top: 1em;
+border-radius: 5px;
+display: block;
+ padding: 2em .2em;
+
+z-index: 1;
+}
+
+
+.hero-section-text{
+    margin-left: .5em;
+    margin-top: 0em;
+    padding-bottom: 1em;
+  
+}
+
+.hero-section-text h1{
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+.hero-sec-image{
+    height: 28vh;
+    max-width: 100%;
+   
+}
+
+
+
+.hero-sec-image img{
+    width: 100%;
+    object-fit: cover;
+  
+   
+}
+
+
+
+
+.hero-section button{
+    padding: .6em 2em;
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: rgb(36, 38, 36);
+    color: #eceeee;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+/* brands */
+
+.our-brands{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 0em;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: .5em;
+    padding: 1em 0em;
+}
+
+.brands{
+   height: 7.6vh;
+   border: none;
+   flex: 1 0 18%;
+   border: none;
+   box-shadow: none;
+   scroll-snap-align: start;
+}
+
+.brands img{
+   padding-left: 1em;
+   padding-right: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.our-brands-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 20px;
+}
+
+
+
+/* newarivals */
+
+.newarivals{
+    margin-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.arrivals-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.arrivals-cards{
+ display: flex;
+ flex-wrap: wrap;
+ flex: 1 0 100%;
+ gap: .8em;
+ justify-content: space-evenly;
+}
+
+.card{
+    width: 46%;
+    height: 42vh;
+
+}
+
+.image-card-heart{
+    width: 100%;
+    height: 20vh; 
+    position: relative;
+}
+
+.image-card-heart img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fa-heart{
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+.card-text{
+    line-height: 1.2em;
+    margin-top: .5em;
+}
+
+.cap-price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cap-price h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-text p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 12px;
+}
+
+.card-text i{
+    font-size: 11px;
+    color: #9e9e9e;
+}
+
+
+.card-icons small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624; 
+}
+
+
+
+.card button{
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-top: .5em;
+    border-radius: 25px;
+    box-shadow: none;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: #eceeee;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    color: #242624; 
+}
+
+.card button:hover{
+    background-color: #242624;
+    color: #eceeee;
+
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+
+/* popular category */
+
+.popular-categories{
+    padding-bottom: 1em;
+}
+
+.popular-category-head{
+    margin-bottom: 1.em;
+}
+.popular-category-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 20px;
+}
+
+
+.flex-category{
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .7em;
+}
+
+.popular-category-card{
+    display: flex;
+    width: 100%;
+    height: 18vh;
+    gap: 1em;
+    background-color:#eceeee;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 5px;
+}
+
+.category-img{
+    width: 40%;
+    height: 15vh;
+}
+
+.category-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 0em;
+}
+
+.category-info{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-evenly;
+}
+.category-info h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+}
+
+
+.category-info p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+
+
+/* best offer */
+
+.best-offer{
+    margin-top: 2em;
+}
+
+
+.best-offer-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.best-offer-flex{
+    display: flex;
+    flex-direction: column;
+     overflow-y: hidden; 
+    gap: .5em;
+}
+
+.best-offer-card{
+    display: flex;
+    min-height: 0vh;
+    flex: 1 0 100%;
+    position: relative;
+    gap: .5em;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: .6em;
+}
+
+.percentage-off small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    border: 1px solid;
+    position: absolute;
+    right: .2em;
+    top: 0;
+    background-color: coral;
+    color: #eceeee;
+    padding: .2em .5em;
+}
+
+
+.best-offer-image{
+    width: 100%;
+    height: 100%;
+}
+
+.best-offer-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .2em;
+}
+
+
+.best-offer-product-name h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+
+.old-price{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
+.new-price{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+.first-segment-responsive{
+    width: 45%;
+    min-height: 18vh;
+    
+}
+
+
+.second-segment-responsive{
+    width: 50%;
+    min-height: 0vh;
+    flex-direction: column;
+   margin-top: 3em;
+}
+
+
+
+
+
+
+
+/* product page */
+
+.product-page-product{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-page-product-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: .5em;
+    padding-bottom: .3em;
+}
+
+.product-page-product-info{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: .2em;
+}
+
+
+
+.large-image{
+    width: 100%;
+    height: 28vh;
+    margin-top: 0em;
+    background-color: #eceeee;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .large-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    }
+    
+    
+    
+    
+    .smaller-images{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1em;
+       
+    }
+    
+    .small-image{
+        width: 22%;
+        height: 8vh;
+        background-color: #eceeee;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+       
+    }
+    
+    .small-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+
+
+    .product-page-info-head h2{
+        text-transform: capitalize;
+        font-family: 'Fira Sans', sans-serif;
+        color: #242624;
+        font-size: 22px;
+        }
+        
+        .product-page-info-head p{
+            text-transform: capitalize;
+        font-family: 'Fira Sans', sans-serif;
+        color: #242624;
+        font-size: 12px;
+        }
+        
+        .product-page-product-info .card-icons i{
+            color: #9e9e9e;
+        }
+        
+        
+        .product-page-price h1{
+            text-transform: capitalize;
+        font-family: 'Fira Sans', sans-serif;
+        color: #242624;
+        font-size: 24px;
+        }
+        
+        
+        .product-page-price p{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #242624;
+            font-size: 12px;
+        }
+        
+        .color h3{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #242624;
+            font-size: 14px;
+            margin-bottom: .7em;
+        }
+        
+        
+        .increase-cart-product-page{
+            display: flex;
+            column-gap: 1em;
+            align-items: center;
+        }
+        
+        
+        .increase-btn{
+        background-color: #eceeee;
+        width: 6em;
+        height: 3.5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 15px;
+        }
+        
+        .increase-btn span{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #242624;
+            font-size: 20px;
+        }
+        
+        
+        .increase-cart-product-page p{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #242624;
+            font-size: 14px;
+        }
+        
+        
+        .products-page-add-to-cart-btn button{
+            width: 10em;
+            height: 4vh;
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #eceeee;
+            background-color:  #242624;
+            border-radius: 22px;
+            border: none;
+            margin-right: .5em;
+            cursor: pointer;
+        }
+        
+        
+        
+        
+        .color-variant{
+            display: flex;
+           column-gap: .8em;
+        }
+        
+        
+        
+        .color-variant-1{
+            width: 10%;
+            height: 4.5vh;
+            background-color: crimson;
+            border-radius: 50%;
+        }
+        
+        
+        .color-variant-2{
+            width: 10%;
+            height: 4.5vh;
+            background-color: black;
+            border-radius: 50%;
+        }
+        
+        
+        .color-variant-3{
+            width: 10%;
+            height: 4.5vh;
+            background-color: wheat;
+            border-radius: 50%;
+        }
+        
+        
+        .color-variant-4{
+            width: 10%;
+            height: 4.5vh;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        
+        
+        .color-variant-5{
+            width: 10%;
+            height: 4.5vh;
+            background-color: green;
+            border-radius: 50%;
+        }
+        
+        
+        
+        .free-delivery{
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        
+        .free-delivery-icon i{
+            color: #070f15;
+        }
+        
+        .free-delivery-info h4, small{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #070f15;
+        }
+        
+        .free-delivery-info h4{
+            font-size: 14px;
+        }
+        
+        .free-delivery-info small{
+            font-size: 12px;
+        }
+        
+        .return-refund{
+            display: flex;
+            gap: 1.5em;
+            align-items: center;  
+        }
+        
+        .return-refund-icon i{
+            color: #070f15;
+        }
+        
+        
+        
+        .return-refund-info h4, small{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #070f15;
+        }
+        
+        .return-refund-info h4{
+            font-size: 14px;
+        }
+        
+        .return-refund-info small{
+            font-size: 12px;
+        }
+        
+        
+        /* footer */
+        
+        footer{
+            width: 100%;
+            min-height: 100%;
+            background-color: #242624;
+            padding: 1.5em .5em;
+        }
+        
+        .footer-content{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        
+        .footer-content h4{
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+            color: #cccccc;
+        }
+        
+        .footer-content ul li a{
+            color: #bbbbbb;
+        }
+        
+        .logo-head-other-info{
+         max-width: 100%;
+        }
+        
+        .logo-head-other-info h2{
+            color: #eceeee;
+        }
+        
+        .logo-head-other-info p{
+            color: #eceeee;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: small;
+        }
+        
+        
+        .useful-links ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-around;
+            
+        }
+        
+        .information-about-footer ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-around;
+        }
+        
+        
+        
+        
+        
+        .help-center ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-around;
+        }
+        
+        
+        .copyright{
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            color: #9e9e9e;
+            text-transform: capitalize;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+  @media only screen and (max-device-width: 360px) and (max-width: 640px) {
+    /* Styles specific to smaller mobile devices */
+        
+/* brands */
+
+.our-brands{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 0em;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: .5em;
+    padding: 1em 0em;
+}
+
+.brands{
+   height: 9vh;
+   border: none;
+   flex: 1 0 18%;
+   scroll-snap-align: start;
+}
+
+.brands img{
+   padding-left: 1em;
+   padding-right: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.our-brands-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 20px;
+}
+
+
+
+/* newarivals */
+
+.newarivals{
+    margin-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.arrivals-head h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.arrivals-cards{
+ display: flex;
+ flex-wrap: wrap;
+ flex: 1 0 100%;
+ gap: .8em;
+}
+
+.card{
+    width: 46%;
+    height: 47vh;
+
+}
+
+.image-card-heart{
+    width: 100%;
+    height: 20vh; 
+    position: relative;
+}
+
+.image-card-heart img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fa-heart{
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+.card-text{
+    line-height: 1.2em;
+    margin-top: .5em;
+}
+
+.cap-price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cap-price h4{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 14px;
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-text p{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624;
+    font-size: 12px;
+}
+
+.card-text i{
+    font-size: 11px;
+    color: #9e9e9e;
+}
+
+
+.card-icons small{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    color: #242624; 
+}
+
+
+.card button{
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-top: .5em;
+    border-radius: 25px;
+    box-shadow: none;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: #eceeee;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    color: #242624; 
+}
+
+.card button:hover{
+    background-color: #242624;
+    color: #eceeee;
+
+}
+
+.cap-price p{
+    color: #242624;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+
+.hero-section{
+    width: 100%;
+     min-height: 55vh;
+    background-color: #eceeee;
+    margin-top: 1em;
+    border-radius: 5px;
+    display: block;
+     padding: 2em .2em;
+    
+    z-index: 1;
+    }
+
+
+
+    .second-segment-responsive{
+        width: 50%;
+        min-height: 0vh;
+        flex-direction: column;
+       margin-top: 2em;
+    }
+
+
+
+
+
+
+  }

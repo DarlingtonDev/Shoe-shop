@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin panel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="sidebar">
+        <div class="header-sidebar">
+            <img src="./Untitledcart.png" alt="">
+            <span><h2>my shop</h2></span>
+        </div>
+    <hr>
+        <div class="navlinks">
+            <ul>
+               <li><a href="./admin.html">dashboard</a></li>
+                <li><a href="./orders.html">orders</a></li>
+                <li><a href="./product.html">products</a></li>
+                <li><a href="./customers.html">customers</a></li>
+                
+            </ul>
+        </div>
+
+
+        <footer>
+            <div class="adminimg">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="adminame">
+                <p>Darlington Obi</p>
+                <small>obii6776@gmail.com</small>
+            </div>
+            <div class="icon">
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </footer>
+
+       
+    </section>
+    <section class="maincontent">
+        <div class="header-main order-head">
+            <h2> add products</h2>
+            <div class="searchbar">
+                <form action="">
+                    <label for="customer-filter">Product Name:</label>
+                    <input type="search" placeholder="products name">
+                    <button>search</button>
+                </form>
+            </div>
+ 
+        </div>
+        <div class="orders-management-section">
+            <div >
+            <h4>dashboard / products / add products</h4>
+            <h3>Product Details</h3>
+         
+        </div>
+    </div>
+    <form action="" id="product-form">
+<div class="basic-info-product-section">
+    <h3>basic informations</h3>
+    <input type="text" placeholder="Product Name" class="firstinput">
+    <textarea name="" id="" placeholder="Descriptions"></textarea>
+<div class="stock">
+    <h3 style="margin-bottom: .5em;">Stock & Pricing</h3>
+
+    <label for="">stock:</label>
+    <select name="" id="space">
+        <option value="">in stock</option>
+        <option value="">out of stock</option>
+        <option value=""></option>
+    </select>
+    <label for="">price:</label>
+    <input type="text" placeholder="Price" class="secondinput">
+
+    <label for="">categories:</label>
+    <select name="" id="">
+        <option value="">Male Shoes</option>
+        <option value="">out of stock</option>
+        <option value=""></option>
+    </select>
+
+</div>
+</div>
+<div class="image-info-product-section">
+    <div class="product-img-head">
+        <h3>product image</h3>
+    </div>
+        <div class="content" id="fourth-image">
+          <label for="file-input" class="file-input" id="file-label">
+            Upload Image or Video <br> <small>you can add up to 4 images</small>
+            <input id="file-input" type="file" accept="image/*, video/*">
+          </label>
+         
+        </div>
+        <div class="otherimages">
+        <div class="firstimage imgsize" id="first-img">
+
+        </div>
+
+        <div class="secondimage imgsize" id="second-image">
+            
+        </div>
+
+        <div class="thirdimage imgsize" id="third-image">
+            
+        </div>
+    </div>
+   <div class="visibility">
+    <h3>group</h3>
+    <div class="checkbox-wrapper">
+        <div class="ind-checkbox">
+    <input type="checkbox" id="checkbox1" name="checkboxes" value="option1">
+    <label for="checkbox1">Featured Products</label>
+</div>
+<div class="ind-checkbox">
+    <input type="checkbox" id="checkbox2" name="checkboxes" value="option2">
+    <label for="checkbox2">Latest Products</label>
+</div>
+<div class="ind-checkbox">
+    <input type="checkbox" id="checkbox3" name="checkboxes" value="option3">
+    <label for="checkbox3">Trending Products</label>
+</div>
+</div>
+   </div>  
+      
+</div>
+</form>
+<button class="add-product-btn">Add product</button>
+ </main>
+
+
+
+
+  <script>
+    let uploadInput = document.getElementById('file-input');
+    let firstimage = document.getElementById('first-img')
+    let secondImage = document.getElementById('second-image');
+    let thirdImage = document.getElementById('third-image');
+    let fourthImage = document.getElementById('fourth-image');
+    let label = document.getElementById('file-label');
+    uploadInput.addEventListener('change', ()=>{
+        let uploadValue = uploadInput.files[0];
+        let reader = new FileReader();
+        reader.readAsDataURL(uploadValue);
+        reader.addEventListener('load', function(){
+            let fileType = uploadValue.type.split('/')[0];
+            if(fileType == 'image'){
+                let imageurl = reader.result;
+                let imageTag = document.createElement('img');
+                imageTag.src = imageurl;
+                imageTag.style.width = '100%'
+                imageTag.style.height = '100%'
+                if (firstimage.childElementCount === 0) {
+                 firstimage.appendChild(imageTag);
+                } else if (firstimage.childElementCount === 1 && secondImage.childElementCount === 0 ) {
+                    secondImage.appendChild(imageTag);
+                } else if (secondImage.childElementCount === 1 && thirdImage.childElementCount ===0) {
+                     thirdImage.appendChild(imageTag);
+                }else{
+                    fourthImage.removeChild(label);
+                    fourthImage.style.border = 'none';
+                    fourthImage.appendChild(imageTag);
+                }
+                
+            }
+        })
+    })
+  </script>
+
+</body>
+</html>
